@@ -12,4 +12,9 @@ export default defineConfig({
       return path.replace("/src/", "/__snapshots__/") + extension;
     },
   },
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
 });
