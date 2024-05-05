@@ -14,9 +14,11 @@
     "lint:tsc": "tsc --noEmit",
     "lint:prettier": "prettier . --check",
     "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:style": "stylelint 'src/**/*.{css,less,sass,scss}'",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier . --write",
     "fix:eslint": "eslint . --ext .ts,.tsx --fix",
+    "fix:style": "stylelint --fix 'src/**/*.{css,less,sass,scss}'",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
