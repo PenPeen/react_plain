@@ -14,16 +14,22 @@
     "lint:tsc": "tsc --noEmit",
     "lint:prettier": "prettier . --check",
     "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:style": "stylelint 'src/**/*.{css,less,sass,scss}'",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier . --write",
     "fix:eslint": "eslint . --ext .ts,.tsx --fix",
+    "fix:style": "stylelint --fix 'src/**/*.{css,less,sass,scss}'",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "stylelint": "^16.5.0",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.7",
