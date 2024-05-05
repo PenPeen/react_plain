@@ -11,10 +11,12 @@ module.exports = {
     "plugin:vitest/recommended",
     "prettier",
     "plugin:storybook/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh", "import"],
+  plugins: ["react-refresh", "import", "jsx-a11y", "react", "react-hooks"],
   settings: {
     react: { version: "detect" },
   },
