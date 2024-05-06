@@ -12,7 +12,6 @@ module.exports = {
     'prettier',
     'plugin:storybook/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -21,6 +20,7 @@ module.exports = {
     react: { version: 'detect' },
   },
   rules: {
+    'react-hooks/rules-of-hooks': 'error',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
